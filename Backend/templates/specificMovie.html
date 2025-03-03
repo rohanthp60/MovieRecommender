@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>{{title}}</title>
+    </head>
+    <body>
+        <h1>{{title}}</h1>
+        <img src="{{ imgPath }}">
+        <h2>{{tagline}}</h2>
+        <p>{{overview}}</p><br>
+        <form method="" action='{% url "rec"%}'>
+            <button type="submit" name="movie">Back</button>
+        </form>
+        <form method="" action='{% url "home"%}'>
+            <button type="submit">Home</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>{{searchedMovie.0}}</title>
+    </head>
+    <body>
+        <h1>Movie you entered: {{searchedMovie.0}}</h1>
+        <img src='{{searchedMovie.1}}' alt="{{searchedMovie.1}}">
+        <br>
+        <h1>Movies Recommened:</h1>
+        {% for movie in movies %}
+            <a href="{% url 'spec' %}?movie_name={{ movie.0 }}">
+                <h1>{{movie.0}}</h1>
+            </a>
+            <img src='{{movie.1}}' alt="{{movie.1}}">
+            <br>
+        {% endfor %}
+        <form method="get" action='{% url "home"%}'>
+            <button type="submit">Back</button>
+        </form>
+    </body>
+</html>

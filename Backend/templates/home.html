@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <title>Find Movies</title>
+    </head>
+    <body>
+        <h1>Enter movie name:</h1>
+        <form method="get" action='{% url "rec"%}'>
+            <textarea rows="1" cols="100" name="movie"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
