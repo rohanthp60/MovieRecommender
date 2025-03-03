@@ -113,9 +113,3 @@ The `Movies` model stores:
 - Create an admin interface for managing movie data
 - Implement advanced search filters (by genre, year, etc.)
 - Add responsive design for mobile devices
-
-## Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
